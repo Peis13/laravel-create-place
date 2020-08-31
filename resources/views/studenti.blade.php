@@ -1,12 +1,12 @@
 @extends('layouts.app')
 
 @section('body_content')
-  <h1>pagina studenti</h1>
-  @foreach ($studenti as $studente)
+  <h1>pagina students</h1>
+  @foreach ($students as $student)
     <ul>
-      <li>{{ $studente['nome'] }}</li>
-      <li>{{ $studente['cognome'] }}</li>
-      <li>{{ $studente['voto'] }}</li>
+      <li>{{ $student->nome }}</li>
+      <li>{{ $student->cognome }}</li>
+      <li>{{ $student->voto }}</li>
     </ul>
   @endforeach
 @endsection
