@@ -7,7 +7,7 @@ use App\Student;
 
 class StudentController extends Controller
 {
-  public function index() {
+    public function index() {
     // $students = [
     //   [
     //     'nome' => 'nicolò',
@@ -29,5 +29,9 @@ class StudentController extends Controller
     // dd($students);
 
     return view('studenti', compact('students'));
-  }
+    }
+
+    public function handlebars() {
+      return view('studenti-handlebars');
+    }
 }

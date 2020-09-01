@@ -4,7 +4,7 @@ Il controller richiama un Model che mappa una tabella nel db (creata attraverso 
 @extends('layouts.app')
 
 @section('body_content')
-  <h1>pagina students</h1>
+  <h1>pagina studenti</h1>
   @foreach ($students as $student)
     <ul>
       <li>studente: {{ $student->nome }} {{ $student->cognome }}</li>
